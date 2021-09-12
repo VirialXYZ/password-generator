@@ -54,12 +54,24 @@
 }
 
 .center-content h1 {
-  color: #2c509e;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
   font-size: 5em;
   font-weight: 700;
   text-align: left;
   line-height: 1.1em;
   text-transform: uppercase;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 /* Customize the label (the container) */
